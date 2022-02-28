@@ -46,7 +46,7 @@ $conn = mysqli_connect(DBHOST, DBUSER, DBPASS, DBNAME);
         </div>
     </nav>
 
-    <section class="highlight-phone" style="background: url(&quot;assets/img/Exyo6XmU4AEYzV3.jpg&quot;) center / cover no-repeat, #ffffff;opacity: 1;filter: blur(0px);min-height: 500px;">
+    <section class="highlight-phone" style="background: url(assets/img/Exyo6XmU4AEYzV3.jpg&quot;) center / cover no-repeat, #ffffff;opacity: 1;filter: blur(0px);min-height: 500px;">
         <div class="container">
             <div class="row" style="margin-top: 20px;">
                 <div class="col-md-8 col-sm-12 mb-5" style="text-align: left;margin-top: 80px;height: auto;">
@@ -91,7 +91,7 @@ $conn = mysqli_connect(DBHOST, DBUSER, DBPASS, DBNAME);
                         $id = urlencode($row['id']);
                 ?>
                     <div class="card">
-                        <div class="card-img-overlay d-table float-start flex-row-reverse" data-aos="fade" data-aos-duration="200" style="background: url(&quot;<?php echo $row['thumbnail'] ?>&quot;) no-repeat, #ffffff;margin-top: 100px; background-size: cover; background-position: center ;min-height: 450px;border-radius: 10px;box-shadow: 0px 0px 5px 1px var(--bs-gray-400);height: 356px;width: 100%; background-size: cover, auto;padding-top: 0px;">
+                        <div class="card-img-overlay d-table float-start flex-row-reverse" data-aos="fade" data-aos-duration="200" style="background: url("<?php echo $row['thumbnail'] ?>") no-repeat, #ffffff;margin-top: 100px; background-size: cover; background-position: center ;min-height: 450px;border-radius: 10px;box-shadow: 0px 0px 5px 1px var(--bs-gray-400);height: 356px;width: 100%; background-size: cover, auto;padding-top: 0px;">
                             <a href="post.php?postid=<?php echo $row['postid']?>" style="text-decoration: none; color: black">
                                 <h4 class="bounce animated" style="margin-top: 270px;padding-left: 20px;color: var(--bs-white);font-size: 29px;font-family: Alatsi, sans-serif;box-shadow: 0px 0px 0px var(--bs-gray);"><?php echo $row['title'] ?></h4>
                             </a>    
